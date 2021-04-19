@@ -2,44 +2,152 @@
 <html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>MTG Fantasy</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/icon.png"> <!--For website favicon-->
+    <!--for Google custom fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <!--Paste your header content here.-->
-    </header>
-	
-    <nav>
-        <!--Paste your navigation content here.-->
+<body>	
+    <!--The Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand"><img src="img/icon.png"></a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar10">
+                <ul class="navbar-nav nav-fill w-100">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="draft/createdraft.html">Create Draft</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="draft/viewdrafts.html">View Drafts</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">
+                            Guides
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="guides/mtg_quickstart.html">MTG Quickstart</a></li>
+                            <li><a href="guides/mtg_proscene.html">MTG Pro Scene</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">
+                            Articles
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="articles/pvvdr.html">Strixhaven Tournament</a></li>
+                            <li><a href="guides/strixhaven_tournament.html">PVDDR</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_project.html">About Project</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-
-    <section class="main">
-        <h1>MTG Fantasy</h1>
-        <p></p> <!--quick description of site-->
-        <div>
-            <!--here I have a few "cards" (will likely use bootstrap for these but
+    <div class="container">
+        <!--Section 1: Title and Create Draft button-->
+        <div id="home1" class="homeDiv">
+            <h1 id="title">MTG Fantasy</h1>
+            <a class="homebtn" href="draft/createdraft.html">Create Draft</a>
+        </div>
+        <!--Section 2: Guides-->
+        <div id="home2" class="homeDiv">
+            <h2>New to MTG or the Pro Scene?</h2>
+            <p>Feel free to check out any of the below guides before jumping into your first draft!</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top card-img-first-row" src="img/mtg-arena-1.jpeg" alt="MTGArena image">
+                        <div class="card-body">
+                            <h3 class="card-title">MTG Quickstart</h3>
+                            <p class="card-text">A crashcourse on the trading card game Magic: the Gathering. A recommended read for those unfamiliar with the game.</p>
+                            <a href="guides/mtg_quickstart.html" class="homebtn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top card-img-first-row" src="img/Trophy-Shot_6.jpeg" alt="Pro Scene image">
+                        <div class="card-body">
+                            <h3 class="card-title">Pro Scene Guide</h3>
+                            <p class="card-text">The MTG pro scene can be a bit confusing to understand at first so it's recommended to read this quick guide if new to it.</p>
+                            <a href="guides/mtg_proscene.html" class="homebtn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Section 3: Articles-->
+        <div id="home3" class="homeDiv">
+            <h2>Articles</h2>
+            <p>Looking to level up your drafting skills? Interesting in keeping up with the pro scene? These articles will give you a leg up in your next MTG Fantasy draft!</p>
+            <h2>Latest Articles</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top card-img-first-row" src="img/strixhaven.jpeg" alt="MTGArena image">
+                        <div class="card-body">
+                            <h3 class="card-title">Upcoming Tournament: Strixhaven Championship</h3>
+                            <p class="card-text">An analysist of the upcoming tournament, looking at the top decks and what players may be bringing to the event.</p>
+                            <a href="articles/strixhaven_championship.html" class="homebtn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top card-img-first-row" src="img/paulo.png" alt="Pro Scene image">
+                        <div class="card-body">
+                            <h3 class="card-title">Player Analysis: Paulo Vitor Damo Da Rosa</h3>
+                            <p class="card-text">Paulo has had a great couple of years, but will he hold up in the latest MTG set? Find out more in our analysis here!</p>
+                            <a href="guides/mtg_quickstart.html" class="homebtn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--here I have a few "cards" (will likely use bootstrap for these but
                 for now am just using basic HTML) that will describe different 
                 sections of the website plus provide links-->
-            <h2></h2>
-            <a href=""><img></a>
-            <p></p>
-
-            <h2></h2>
-            <a href=""><img></a>
-            <p></p>
-
-            <h2></h2>
-            <a href=""><img></a>
-            <p></p>
-        </div>
         
-    </section>
     
     <footer>
-        <!--Paste your footer content here.-->
+        <div class="row">
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-4">
+                <a href="termsofservice.html" class="footerA">Terms of Service</a>
+            </div>
+            <div class="col-sm-4">
+                <!--blank space for now-->
+            </div>
+            <div class="col-sm-2">
+                <!--no twitter account (yet)!-->
+                <a href="https://twitter.com/"><img class="footerIcon" src="https://image.flaticon.com/icons/png/512/124/124021.png"></a>
+            </div>
+        </div>
     </footer>
 </body>
 

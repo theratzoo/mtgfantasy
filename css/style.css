@@ -1,0 +1,111 @@
+/* TODO: for styles exclusive to a page, make a new sheet for them */
+
+#home1 {
+    text-align:center;
+    background-color:#cccccc;
+    padding-bottom:80px;
+}
+
+#home2 {
+    text-align:center;
+    background-color:#ffffff;
+    padding-bottom:40px;
+}
+
+#home3 {
+    text-align:center;
+    background-color:#cccccc;
+    padding: 0px 40px 40px 40px;
+    margin-bottom:100px;
+}
+
+.homeDiv {
+    text-align:center;
+    padding:0px 40px 40px 40px;
+    color:black;
+}
+
+body {
+    background-color:#ffffff;
+    font-family: 'Lora', serif;
+}
+
+#title {
+    padding:35px;
+}
+
+
+
+.homebtn {
+    background:    #1E73BE;
+    border-radius: 10px;
+    padding:       20px 45px;
+    color:         #dddddd;
+    display:       inline-block;
+    font:          normal bold 22px/1 "Open Sans", sans-serif;
+    text-align:    center;
+}
+
+.homebtn:hover {
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.card {
+    background-color:#dddddd;
+    color:#111111;
+}
+
+h2 {
+    padding:20px;
+}
+
+/* footer */
+
+.footerIcon {
+    max-width:100%;
+    width:50px;
+}
+
+footer {
+    background-color: #2D395C;
+}
+
+.footerA {
+    color: #222222;
+}
+
+.footerA:hover {
+    color: #000000;
+    font-weight:500;
+}
+
+/* navigation bar */
+
+nav {
+    background-color: #2D395C !important;
+    
+}
+
+.nav-link {
+    color:#cccccc !important;
+}
+
+.nav-link:hover {
+    color:#ffffff !important;
+    font-weight: 500;
+}
+
+.dropdown-menu {
+    background-color: #2D395C !important;
+    
+}
+.dropdown-menu li a {
+    color:#cccccc !important;
+}
+
+.dropdown-menu li a:hover {
+    color:#ffffff !important;
+    font-weight: 500;
+}
+
