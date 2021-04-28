@@ -26,8 +26,14 @@
 }
 
 body {
-    background-color:#ffffff;
+    background-color:#2D395C;
     font-family: 'Lora', serif;
+    padding:20px;
+}
+
+main {
+    background-color: #ffffff;
+    padding:20px;
 }
 
 #title {
@@ -36,7 +42,7 @@ body {
 
 
 
-.homebtn {
+.fantasybtn {
     background:    #1E73BE;
     border-radius: 10px;
     padding:       20px 45px;
@@ -46,7 +52,9 @@ body {
     text-align:    center;
 }
 
-.homebtn:hover {
+
+
+.fantasybtn:hover {
     color:#ffffff;
     text-decoration: none;
 }
@@ -56,8 +64,9 @@ body {
     color:#111111;
 }
 
-h2 {
-    padding:20px;
+#main-header {
+    background-color:#eeeeee;
+    padding:10px;
 }
 
 /* footer */
@@ -72,11 +81,11 @@ footer {
 }
 
 .footerA {
-    color: #222222;
+    color: #cccccc;
 }
 
 .footerA:hover {
-    color: #000000;
+    color: #eeeeee;
     font-weight:500;
 }
 
@@ -109,3 +118,30 @@ nav {
     font-weight: 500;
 }
 
+/* new stuff for post-bootstrap era sadge */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-top:20px;
+    font-size:20px;
+}
+
+.navbar-link {
+    float:left;
+    padding-left:40px;
+    padding-right:40px
+}
+
+.navbar-link a {
+    color:#cccccc !important;
+    display:block;
+    text-align:center;
+    text-decoration:none;
+}
+.navbar-link a:hover{
+    color:#ffffff !important;
+    font-weight: 500;
+}

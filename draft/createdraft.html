@@ -1,43 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <title>Create Draft</title>
-    <link href="../css/styles.css" rel="stylesheet" type="text/css">
-    <script src="../js/createdraftscript.js" defer></script>
-</head>
-
-<body>
-    <header>
-        <!--Paste your header content here.-->
-    </header>
-	
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>Create Draft</title>
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="../img/icon.png"> <!--For website favicon-->
+        <!--for Google custom fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <!--JS-->
+        <script src="../js/createdraftscript.js" defer></script>
+    </head>
+<body>	
+    <!--The Navbar-->
     <nav>
-        <!--Paste your navigation content here.-->
+        <ul>
+            <li class="navbar-link"><a href="../index.html"><img src="../img/icon.png" alt="website icon"></a></li>
+            <li class="navbar-link"><a href="../about.html">About</a></li>
+            <li class="navbar-link"><a href="createdraft.html">Create Draft</a></li>
+            <li class="navbar-link"><a href="viewdrafts.html">View Drafts</a></li>
+            <li class="navbar-link"><a href="../guides/index.html">Guides</a></li>
+            <li class="navbar-link"><a href="../articles/index.html">Articles</a></li>
+            <li class="navbar-link"><a href="../about_project.html">About Project</a></li>
+        </ul>
     </nav>
-    <section class="main">
-        <h1>Create Draft</h1>
+    <main>
+        <header>
+            <h1>Create Draft</h1>
+        </header>
         <br>
-        <!--Since this is a simple project, this will not be functional. If I have time
-        I will try to make it more functional with basic JavaScript but this isn't really
-        doable without actually having some sort of a server.-->
-        <form>
+        <section>
             <h2>Name of Draft</h2>
             <input placeholder="name">
             <br>
             <h2>Name of participants</h2>
-            <input placeholder="participant 1">
-            <input placeholder="participant 2">
-            <input placeholder="participant 3">
-            <!--include more of these. If I have time, I use JavaScript to create another field
-            by pressing a button.-->
-            <button>Create Draft</button>
-        </form>
-    </section>
-    
-    <footer>
-        <!--Paste your footer content here.-->
+            <section id="participant-inputs">
+                <input placeholder="participant 1">
+                <br>
+                <input placeholder="participant 2">
+                <br>
+                <input placeholder="participant 3">
+                <br>
+                <input placeholder="participant 4">
+                <br>
+                <input placeholder="participant 5">
+                <br>
+                <input placeholder="participant 6">
+                <br>
+            </section>
+            <a href="#" id="add-participant" class="fantasybtn">Add Participant</a>
+            <a href="#" class="fantasybtn">Create Draft</a>
+        </section>
+    </main>
+    <footer>    
+        <br>
+        <a href="termsofservice.html" class="footerA">Terms of Service</a>
+        <br><br>
+        <!--no twitter account (yet)!-->
+        <a href="https://twitter.com/"><img class="footerIcon" src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter icon"></a>
     </footer>
 </body>
 
