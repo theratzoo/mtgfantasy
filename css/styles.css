@@ -1,46 +1,102 @@
-/* TODO: for styles exclusive to a page, make a new sheet for them */
+/* Home Page Exclusive Styles */
 
 #home1 {
-    text-align:center;
     background-color:#cccccc;
     padding-bottom:80px;
 }
 
 #home2 {
-    text-align:center;
     background-color:#ffffff;
-    padding-bottom:40px;
 }
 
 #home3 {
-    text-align:center;
     background-color:#cccccc;
-    padding: 0px 40px 40px 40px;
     margin-bottom:100px;
 }
 
 .homeDiv {
     text-align:center;
-    padding:0px 40px 40px 40px;
+    padding:40px 20px 40px 20px;
     color:black;
-}
-
-body {
-    background-color:#2D395C;
-    font-family: 'Lora', serif;
-    padding:20px;
-}
-
-main {
-    background-color: #ffffff;
-    padding:20px;
 }
 
 #title {
     padding:35px;
 }
 
+.card {
+    background-color:#dddddd;
+    color:#111111;
+}
 
+/* General Styles */
+
+body {
+    background-color:#2D395C;
+    font-family: 'Lora', serif;
+    padding:20px;
+    color:#111111;
+}
+
+#main-header {
+    background-color:#ddd;
+    padding:20px;
+}
+
+main {
+    padding:20px;
+    background-color: #ffffff;
+}
+
+.content {
+    background-color: #eee;
+    padding:15px;
+}
+
+.itemList li {
+    min-width:60%;
+}
+
+.funfact {
+    font-style: italic;
+    text-align: center;
+}
+
+.indepth-container {
+    display:flex;
+}
+
+.indepth-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.indepth-image {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.indepth-image img {
+    max-height:300px;
+    width:auto;
+}
+
+td {
+    text-align:center;
+    border:1px solid;
+}
+
+th {
+    font-weight:bold;
+}
+
+/* button styles */
 
 .fantasybtn {
     background:    #1E73BE;
@@ -50,23 +106,12 @@ main {
     display:       inline-block;
     font:          normal bold 22px/1 "Open Sans", sans-serif;
     text-align:    center;
+    text-decoration: none;
 }
-
-
 
 .fantasybtn:hover {
     color:#ffffff;
     text-decoration: none;
-}
-
-.card {
-    background-color:#dddddd;
-    color:#111111;
-}
-
-#main-header {
-    background-color:#eeeeee;
-    padding:10px;
 }
 
 /* footer */
@@ -96,43 +141,19 @@ nav {
     
 }
 
-.nav-link {
-    color:#cccccc !important;
-}
-
-.nav-link:hover {
-    color:#ffffff !important;
-    font-weight: 500;
-}
-
-.dropdown-menu {
-    background-color: #2D395C !important;
-    
-}
-.dropdown-menu li a {
-    color:#cccccc !important;
-}
-
-.dropdown-menu li a:hover {
-    color:#ffffff !important;
-    font-weight: 500;
-}
-
-/* new stuff for post-bootstrap era sadge */
-
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    padding-top:20px;
+    padding-top:10px;
     font-size:20px;
 }
 
 .navbar-link {
     float:left;
-    padding-left:40px;
-    padding-right:40px
+    padding-left:6px;
+    padding-right:6px
 }
 
 .navbar-link a {

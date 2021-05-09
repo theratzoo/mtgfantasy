@@ -7,64 +7,33 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <title>Terms of Service</title>
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        
+        <!--CSS-->
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <link href="css/styles_sm.css" rel="stylesheet" type="text/css" media="screen and (max-width:500px)">
+        <link href="css/styles_med.css" rel="stylesheet" type="text/css" media="screen and (min-width:501px) and (max-width:800px)">
+        <link href="css/styles_lg.css" rel="stylesheet" type="text/css" media="screen and (min-width:801px)">
+        
         <link rel="icon" href="img/icon.png"> <!--For website favicon-->
     </head>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a href="index.html" class="navbar-brand"><img src="img/icon.png"></a>
-            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navbar10">
-                <ul class="navbar-nav nav-fill w-100">
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="draft/createdraft.html">Create Draft</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="draft/viewdrafts.html">View Drafts</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">
-                            Guides
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="guides/mtg_quickstart.html">MTG Quickstart</a></li>
-                            <li><a href="guides/mtg_proscene.html">MTG Pro Scene</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">
-                            Articles
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="articles/pvvdr.html">Strixhaven Tournament</a></li>
-                            <li><a href="guides/strixhaven_tournament.html">PVDDR</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about_project.html">About Project</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <!--The Navbar-->
+    <nav>
+        <ul>
+            <li class="navbar-link" id="icon-link"><a href="index.html"><img src="img/icon.png" alt="website icon"></a></li>
+            <li class="navbar-link nav-text-link"><a href="about.html">About</a></li>
+            <li class="navbar-link nav-text-link"><a href="draft/createdraft.html">Create Draft</a></li>
+            <li class="navbar-link nav-text-link"><a href="guides/index.html">Guides</a></li>
+            <li class="navbar-link nav-text-link"><a href="articles/index.html">Articles</a></li>
+            <li class="navbar-link nav-text-link"><a href="articles/pro_schedule.html">Pro Schedule</a></li>
+            <li class="navbar-link nav-text-link"><a href="about_project.html">About Project</a></li>
+        </ul>
     </nav>
 
-    <main class="container"><!--Update your class and other structure information as needed.-->
+    <main>
         <header>
             <h1>Terms of Service</h1>
         </header>
@@ -78,22 +47,12 @@
         
     </main>
     
-    <footer>
-        <div class="row">
-            <div class="col-sm-2">
-
-            </div>
-            <div class="col-sm-4">
-                <a href="termsofservice.html" class="footerA">Terms of Service</a>
-            </div>
-            <div class="col-sm-4">
-                <!--blank space for now-->
-            </div>
-            <div class="col-sm-2">
-                <!--no twitter account (yet)!-->
-                <a href="https://twitter.com/"><img class="footerIcon" src="https://image.flaticon.com/icons/png/512/124/124021.png"></a>
-            </div>
-        </div>
+    <footer>    
+        <br>
+        <a href="termsofservice.html" class="footerA">Terms of Service</a>
+        <br><br>
+        <!--no twitter account (yet)!-->
+        <a href="https://twitter.com/" target="_blank"><img class="footerIcon" src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter icon"></a>
     </footer>
 </body>
 

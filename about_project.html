@@ -7,7 +7,13 @@
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
             <title>About this Project</title>
-            <link href="css/style.css" rel="stylesheet" type="text/css">
+            
+            <!--CSS-->
+            <link href="css/styles.css" rel="stylesheet" type="text/css">
+            <link href="css/styles_sm.css" rel="stylesheet" type="text/css" media="screen and (max-width:500px)">
+            <link href="css/styles_med.css" rel="stylesheet" type="text/css" media="screen and (min-width:501px) and (max-width:800px)">
+            <link href="css/styles_lg.css" rel="stylesheet" type="text/css" media="screen and (min-width:801px)">
+        
             <link rel="icon" href="img/icon.png"> <!--For website favicon-->
 
             <!--for Google custom fonts-->
@@ -16,15 +22,16 @@
         </head>
     </head>
     <body>
+        <!--The Navbar-->
         <nav>
             <ul>
-                <li class="navbar-link"><a href="index.html"><img src="img/icon.png" alt="website icon"></a></li>
-                <li class="navbar-link"><a href="about.html">About</a></li>
-                <li class="navbar-link"><a href="draft/createdraft.html">Create Draft</a></li>
-                <li class="navbar-link"><a href="draft/viewdrafts.html">View Drafts</a></li>
-                <li class="navbar-link"><a href="guides/index.html">Guides</a></li>
-                <li class="navbar-link"><a href="guides/index.html">Articles</a></li>
-                <li class="navbar-link"><a href="about_project.html">About Project</a></li>
+                <li class="navbar-link" id="icon-link"><a href="index.html"><img src="img/icon.png" alt="website icon"></a></li>
+                <li class="navbar-link nav-text-link"><a href="about.html">About</a></li>
+                <li class="navbar-link nav-text-link"><a href="draft/createdraft.html">Create Draft</a></li>
+                <li class="navbar-link nav-text-link"><a href="guides/index.html">Guides</a></li>
+                <li class="navbar-link nav-text-link"><a href="articles/index.html">Articles</a></li>
+                <li class="navbar-link nav-text-link"><a href="articles/pro_schedule.html">Pro Schedule</a></li>
+                <li class="navbar-link nav-text-link"><a href="about_project.html">About Project</a></li>
             </ul>
         </nav>
         <main>
@@ -67,7 +74,7 @@
             <a href="termsofservice.html" class="footerA">Terms of Service</a>
             <br><br>
             <!--no twitter account (yet)!-->
-            <a href="https://twitter.com/"><img class="footerIcon" src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter icon"></a>
+            <a href="https://twitter.com/" target="_blank"><img class="footerIcon" src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter icon"></a>
         </footer>
     </body>
 </html>
